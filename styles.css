@@ -106,11 +106,12 @@ nav ul li a:hover {
 .social-box {
     background: #000;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
-    border-color: #ddd;
-    border-width: 1px;
-    width: 600px; /* Matches image width */
+    border-radius: 10px 10px 10px 10px;
+    width: 600px;
     text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
     
 }
 
@@ -118,6 +119,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .social-icons a {
