@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyshnav P C - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+        
+        h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            color: #222;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+        }
+        
+        .education-item, .project-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-item h3, .project-item h3 {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        
+        .education-details, .project-details {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .project-description {
+            margin-left: 15px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #999;
+            margin: 20px 0;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                font-size: 12pt;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        
+        .no-print {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .print-button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .print-button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print">
+        <button class="print-button" onclick="window.print()">Print Resume</button>
+    </div>
+
+    <div class="header">
+        <h1>Vyshnav P C</h1>
+        <div class="contact-info">
+            <p>Kannur, Kerala - 670562</p>
+            <p>📞 +91 8157982477 ● vyshnavpc007@gmail.com</p>
+            <p><strong>in</strong> <a href="https://www.linkedin.com/in/vyshnav-pc/" target="_blank">https://www.linkedin.com/in/vyshnav-pc/</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Final-year B.Tech student in Electronics and Communication Engineering at NSS College of Engineering. Passionate about IT, proficient in SQL, and C, with a strong foundation in Python, and OOP concepts. Improving in web development, deep learning, Data Structures and Algorithm, and Computer networking. Ready to absorb new skillset and apply such in a team environment.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div><span class="skill-category">Programming:</span> Python, C, SQL, OOP, Data Structures</div>
+            <div><span class="skill-category">Development:</span> Web Designing (HTML, CSS)</div>
+            <div><span class="skill-category">Operating Systems:</span> Windows, Linux</div>
+            <div><span class="skill-category">Machine Learning:</span> Nvidia Jetson Nano, Deep Learning</div>
+            <div><span class="skill-category">Soft Skills:</span> Leadership, Teamwork, Adaptability, Problem-solving</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>NSS College of Engineering, Kerala</h3>
+            <div class="education-details">
+                <span>B.Tech, Electronics & Communication</span>
+                <span>CGPA: 6.47/10</span>
+            </div>
+            <div class="education-details">
+                <span>2025</span>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <h3>CBSE</h3>
+            <div class="education-details">
+                <span>Class 12</span>
+                <span>GPA: 93.4%</span>
+            </div>
+            <div class="education-details">
+                <span>2021</span>
+            </div>
+        </div>
+        
+        <div class="education-item">
+            <h3>CBSE</h3>
+            <div class="education-details">
+                <span>Class 10</span>
+                <span>GPA: 93.2%</span>
+            </div>
+            <div class="education-details">
+                <span>2019</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Ergonomic Bionic Appendage (Mini Project)</h3>
+            <p class="project-description">The project focuses on designing and developing a highly functional and economical bionic limb that enhances human capabilities while prioritizing comfort and ease of use.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Line Following Robot Using 8051 Microcontroller (Course Project)</h3>
+            <p class="project-description">Designed and implemented a line-following robot utilizing the 8051 microcontroller. 8051 is programmed using Embedded C.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Heartbeat Monitoring and Alerting Unit (Course Project)</h3>
+            <p class="project-description">Implemented a device that monitors heart rate and sends alerts for abnormal readings.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Emergency Ping Implemented through 8051 Microcontroller and GSM Module (Course Project)</h3>
+            <p class="project-description">Developed an emergency alert system using an 8051 microcontroller and a GSM module to send notifications in critical situations.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Hobby Projects</h3>
+            <p class="project-description">Wi-Fi Jammer: Designed a device that transmits a signal on the same frequency as a Wi-Fi signal, effectively blocking or disrupting the wireless network connection.</p>
+            <p class="project-description">Library Database Management System: Implemented a database for storing, updating, and altering user data using Python and MySQL.</p>
+            <p class="project-description">Prototype Webpage UI for a Startup: Designed a prototype webpage UI for a startup, focusing on usability and modern design principles.</p>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>Accomplishments</h2>
+    <ul>
+        <li><strong>Hackathon:</strong> Chakravyuha: National-level hackathon organized by IEEE SB NSSCE</li>
+        <li><strong>Competition:</strong> First Runner-up for Ripple Quest State level Ideathon conducted by IEST, Received a special mention in the Logic League competition organized by IEEE</li>
+        <li><strong>Workshops:</strong> Attended a workshop on Vega Processors</li>
+        <li><strong>Certifications:</strong> Ethical Hacking and Cybersecurity (NPTEL), Deep Learning</li>
+    </ul>
+
+    <h2>Extra-Curricular Activities</h2>
+    <p>Music, Movies, Travelling</p>
+
+    <h2>Areas of Interest</h2>
+    <p>Embedded Systems, Mobile App Development, Robotics, Programming</p>
+
+    <h2>Declaration</h2>
+    <p>I hereby declare that the above furnished information is true and correct to the best of my knowledge</p>
+    <p><strong>VYSHNAV PC</strong></p>
+    <p style="text-align: right;">2/2</p>
+
+    <script>
+        // Automatically add page numbers when printing
+        window.onbeforeprint = function() {
+            var pages = document.querySelectorAll('.page-break');
+            pages.forEach(function(page, index) {
+                var pageNumber = document.createElement('div');
+                pageNumber.style.position = 'absolute';
+                pageNumber.style.bottom = '10px';
+                pageNumber.style.right = '10px';
+                pageNumber.textContent = (index + 1) + '/2';
+                page.parentNode.insertBefore(pageNumber, page.nextSibling);
+            });
+        };
+    </script>
+</body>
+</html>
