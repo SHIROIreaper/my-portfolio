@@ -1,8 +1,15 @@
-# MY PORTFOLIO
-this work basically summarise **me** & the work **I** have done with my skills and knowledge
+#Vyshnav P C | Portfolio
+This project showcases my skills, projects and interest in networking and cybersecurity.
+Build with custom terminal-inspired theme.
 ---
-Gone for a terminal like theme implemented using **[Terminal.css](https://terminalcss.xyz)**.
+🚀️ Visit the portfolio: [vyshnavpc.github.io](https://shiroireaper.github.io/my-portfolio/)
 ---
-You can visit the page using [This link](https://shiroireaper.github.io/my-portfolio/)
+##Project Structure
+├── index.html # Main HTML file
+├── Legacy(all my prevous assests and files)
+├── index.html(main web file, you could directly lauch by opening it)
+├── resume.html(yet to add this, but is the resume that would be added soon)
+├──style.css(Custom CSS for a terminal vibe for the portfolio)
+└──README.md(you're here😁️)
 ---
-> PS: This is a work in  progress - I'll keep adding new features and aesthetics to the page in the future. 
+>PS: this project is currently under active development. More features and interactive elements coming soon!
