@@ -1,56 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VYSHNAV P C | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/terminal.css@0.7.2/dist/terminal.min.css">
-  <style>
-    body {
-      background-color: #0f1117;
-      color: #e0e0e0;
-      font-family: 'Fira Code', monospace;
-    }
-    a {
-      color: #00b7ff;
-      text-decoration: underline;
-    }
-    .hero {
-      margin-top: 5rem;
-      text-align: center;
-    }
-    .hero h1 {
-      color: #00ffcc;
-      font-size: 3rem;
-    }
-    .hero .subtitle {
-      color: #00b7ff;
-      font-size: 1.2rem;
-    }
-    .section {
-      margin-top: 4rem;
-      padding-left: 1rem;
-    }
-    .terminal-card {
-      margin-bottom: 2rem;
-      background-color: #1a1d29;
-      border-left: 4px solid #00ffcc;
-      padding: 1rem;
-    }
-    h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 0.3rem;
-    }
-    ul li::before {
-      content: "→ ";
-      color: #00ffcc;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="terminal">
   <div class="container">
     <div class="hero">
-      <h1>>> VYSHNAV P C</h1>
+      <h1>>>&nbsp;VYSHNAV-PC@<span id="typed-text"></span><span class="cursor">█</span></h1>
       <p class="subtitle">Aspiring Cybersecurity Analyst | Linux Enthusiast | Network Explorer</p>
     </div>
 
@@ -66,12 +25,12 @@
       <div class="terminal-card">
         <h3>$ Nmap Wrapper Tool</h3>
         <p>A custom script that simplifies and automates Nmap scanning routines.</p>
-        <a href="https://github.com/shiroireaper/nmap-wrapper" target="_blank">View on GitHub</a>
+        <a href="https://github.com/SHIROIreaper/nmap-automation" target="_blank">View on GitHub</a>
       </div>
       <div class="terminal-card">
         <h3>$ Networking Journey Log</h3>
         <p>My step-by-step documentation of concepts and tools I’ve mastered in networking.</p>
-        <a href="https://github.com/shiroireaper/networking-journey" target="_blank">View on GitHub</a>
+        <a href="https://github.com/SHIROIreaper/Networking-Journey-Log" target="_blank">View on GitHub</a>
       </div>
     </div>
 
@@ -95,5 +54,37 @@
       </p>
     </div>
   </div>
+
+  <script>
+    const phrases = ["cybersec", "kali", "networking", "forensics", "nmap", "pwsh", "burp"];
+    const typedText = document.getElementById("typed-text");
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const current = phrases[phraseIndex];
+      if (isDeleting) {
+        typedText.textContent = current.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(type, 300);
+        } else {
+          setTimeout(type, 40);
+        }
+      } else {
+        typedText.textContent = current.substring(0, charIndex++);
+        if (charIndex > current.length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+        } else {
+          setTimeout(type, 100);
+        }
+      }
+    }
+
+    type();
+  </script>
 </body>
 </html>
