@@ -1,67 +1,119 @@
+/* Base setup */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #012456; /* PowerShell deep blue */
-  color: #00ffff;            /* Cyan/light blue text */
-  font-family: 'Fira Code', monospace;
   margin: 0;
-  padding: 0;
+  background-color: #002240; /* PowerShell blue */
+  color: #e0e0e0;
+  font-family: 'Fira Code', Consolas, monospace;
 }
-.container {
+
+/* Terminal container */
+.terminal-window {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 3rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  background-color: #012456;
+}
+
+/* PowerShell Title bar */
+.powershell-bar {
+  background-color: #003366;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 1rem;
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #00509e;
 }
 
-
-a {
-  color: #00ffff;
-  text-decoration: underline;
+.title-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.window-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.win-btn {
+  color: #ccc;
+  font-weight: bold;
+  cursor: default;
+}
+
+.win-btn:hover {
+  color: white;
+}
+
+/* Main container */
+.container {
+  padding: 2rem;
+}
+
+/* Hero section */
 .hero {
-  margin-top: 5rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero .subtitle {
+  color: #00b7ff;
   font-size: 1.1rem;
-  color: #66e0ff;
 }
 
+/* Content sections */
 .section {
-  margin-top: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 3rem;
 }
 
-.terminal-card {
-  margin-bottom: 2rem;
-  background-color: #031d47;
-  border-left: 4px solid #00ffff;
-  padding: 1rem;
-}
-
-h2 {
-  border-bottom: 2px solid #03457d;
+.section h2 {
+  border-bottom: 2px solid #444;
   padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
+/* Project Cards */
+.terminal-card {
+  background-color: #1a1d29;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #00ffcc;
+}
+
+/* Links */
+a {
+  color: #00b7ff;
+  text-decoration: underline;
+}
+
+/* Bullet customization */
 ul li::before {
   content: "→ ";
-  color: #00ffff;
+  color: #00ffcc;
 }
 
+/* Blinking cursor */
 .cursor {
-  display: inline-block;
-  animation: blink 1s infinite;
-  color: #00ffff;
+  animation: blink 1s step-start infinite;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
-
