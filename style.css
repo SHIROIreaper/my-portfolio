@@ -117,3 +117,50 @@ ul li::before {
     opacity: 0;
   }
 }
+
+/* Contact section with icons and resume */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #00ff90;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+  color: #00e6a0;
+}
+
+.resume-btn a {
+  padding: 8px 16px;
+  background-color: #00ff90;
+  color: #002240;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.resume-btn a:hover {
+  background-color: #00cc70;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
