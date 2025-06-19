@@ -9,31 +9,31 @@
 </head>
 <body>
   <div class="terminal-window">
-    <div class="powershell-bar">
+    <header class="powershell-bar">
       <span class="title-text">Windows PowerShell (Admin) - C:\Users\VYSHNAVPC</span>
       <div class="window-controls">
         <span class="win-btn">─</span>
         <span class="win-btn">☐</span>
         <span class="win-btn">✕</span>
       </div>
-    </div>
+    </header>
 
-    <div class="container">
-      <div class="hero">
+    <main class="container">
+      <section class="hero">
         <h1>>>&nbsp;VYSHNAVPC@<span id="typed-text"></span><span class="cursor">█</span></h1>
         <p class="subtitle">Aspiring Cybersecurity Analyst | Linux Enthusiast | Network Explorer</p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section about">
         <h2>>> About Me</h2>
         <p>
           I'm a B.Tech graduate in Electronics and Communication, pivoting into the field of cybersecurity.
           With a deep interest in networking, Linux systems, and digital forensics, I'm exploring tools like
           Nmap, Wireshark, ProxyChains, and Burp Suite to understand and defend the digital frontier.
         </p>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section projects">
         <h2>>> Projects</h2>
         <div class="terminal-card">
           <h3>$ Nmap Wrapper Tool</h3>
@@ -45,9 +45,9 @@
           <p>My step-by-step documentation of concepts and tools I’ve mastered in networking.</p>
           <a href="https://github.com/SHIROIreaper/Networking-Journey-Log" target="_blank">View on GitHub</a>
         </div>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section skills">
         <h2>>> Skills</h2>
         <ul>
           <li>Linux (Kali, Ubuntu)</li>
@@ -56,9 +56,9 @@
           <li>Bash & Python scripting</li>
           <li>Git, GitHub, CLI tools</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="section">
+      <section class="section contact">
         <h2>>> Contact</h2>
         <div class="contact-row">
           <div class="contact-icons">
@@ -71,44 +71,14 @@
             <a href="cybersecurity_resume.pdf" target="_blank">View Resume</a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </div>
 
   <footer class="footer">
     <p>© 2025 Vyshnav P C. All rights reserved.</p>
   </footer>
 
-  <script>
-    const phrases = ["linux", "cybersecurity", "networks", "shell"];
-    let index = 0;
-    let charIndex = 0;
-    const typedText = document.getElementById("typed-text");
-
-    function type() {
-      if (charIndex < phrases[index].length) {
-        typedText.textContent += phrases[index].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 100);
-      } else {
-        setTimeout(erase, 1000);
-      }
-    }
-
-    function erase() {
-      if (charIndex > 0) {
-        typedText.textContent = phrases[index].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, 60);
-      } else {
-        index = (index + 1) % phrases.length;
-        setTimeout(type, 500);
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      setTimeout(type, 1000);
-    });
-  </script>
+  <script src="scriptjs.js"></script>
 </body>
 </html>

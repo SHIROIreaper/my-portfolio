@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: #002240; /* PowerShell blue */
+  background-color: #002240;
   color: #e0e0e0;
   font-family: 'Fira Code', Consolas, monospace;
 }
@@ -69,6 +69,7 @@ body {
   color: #00ffcc;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  word-break: break-word;
 }
 
 .hero .subtitle {
@@ -118,13 +119,14 @@ ul li::before {
   }
 }
 
-/* Contact section with icons and resume */
+/* Contact section */
 .contact-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
+  gap: 1rem;
 }
 
 .contact-icons a {
@@ -164,3 +166,57 @@ ul li::before {
   margin-top: 40px;
 }
 
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-btn a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .terminal-card {
+    padding: 0.8rem;
+  }
+
+  .powershell-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .contact-icons a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+}
